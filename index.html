@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climas Confort Andrade - Instalación, Mantenimiento y Servicio de Aire Acondicionado 24/7</title>
+    
+    <meta name="description" content="Expertos en instalación, mantenimiento preventivo, correctivo y desmonte de aire acondicionado en CDMX, Estado de México y Área Metropolitana. Atención 24/7.">
+    <meta name="keywords" content="climas confort andrade, aire acondicionado cdmx, instalacion minisplit, mantenimiento climas ecatepec, urgencias aire acondicionado 24/7">
+    <meta name="robots" content="index, follow">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBlue: '#0d6efd',
+                        brandBlueDark: '#0a58ca',
+                        brandGreen: '#25d366',
+                        brandGreenDark: '#16a34a',
+                        darkNavy: '#0f172a',
+                        softBackground: '#f8fafc',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .glow-pulse {
+            animation: pulseGlow 2s infinite;
+        }
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .carousel-slide {
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-softBackground text-slate-800 font-sans antialiased flex flex-col min-h-screen selection:bg-brandBlue selection:text-white">
+
+    <!-- 1. BANNER URGENCIAS TOP 24/7 -->
+    <div id="top-banner" class="bg-gradient-to-r from-red-600 via-amber-600 to-red-600 text-white text-xs sm:text-sm font-bold py-2.5 px-4 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center space-x-2">
+                <span class="flex h-3 w-3 relative">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+                </span>
+                <span>⚡ ¡URGENCIAS TÉCNICAS Y REPARACIONES 24/7 EN CDMX Y EDOMEX!</span>
+            </div>
+            <div class="flex items-center space-x-3">
+                <a href="tel:5594321271" class="bg-white text-red-600 px-3 py-1 rounded-full text-xs font-black hover:bg-slate-100 transition-all shadow-xs flex items-center space-x-1">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>55-9432-1271</span>
+                </a>
+                <a href="https://wa.me/525594321271?text=Hola,%20requiero%20atencion%20de%20urgencia%20para%20mi%20aire%20acondicionado" target="_blank" class="bg-brandGreen text-white px-3 py-1 rounded-full text-xs font-bold hover:bg-brandGreenDark transition-all flex items-center space-x-1">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>WhatsApp 24/7</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. HEADER NAVEGACIÓN -->
+    <header class="bg-white/95 backdrop-blur-md border-b border-slate-200/80 sticky top-[38px] z-40 shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- BRAND LOGO -->
+                <a href="#inicio" class="flex items-center space-x-3 group">
+                    <img id="logo-img" src="logo.png" alt="Climas Confort Andrade Logo" class="h-12 w-auto object-contain max-w-[220px]" onerror="tratarErrorImagen(this, 'https://placehold.co/240x70/0d6efd/ffffff?text=CLIMAS+CONFORT+ANDRADE')">
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-slate-700">
+                    <a href="#inicio" class="hover:text-brandBlue transition-colors">Inicio</a>
+                    <a href="#experiencia" class="hover:text-brandBlue transition-colors">¿Quiénes Somos?</a>
+                    <a href="#servicios" class="hover:text-brandBlue transition-colors">Servicios</a>
+                    <a href="#galeria" class="hover:text-brandBlue transition-colors">Galería</a>
+                    <a href="#polizas" class="hover:text-brandBlue transition-colors">Pólizas Anuales</a>
+                    <a href="#reseñas" class="hover:text-brandBlue transition-colors">Reseñas</a>
+                    <a href="#contacto" class="hover:text-brandBlue transition-colors">Contacto</a>
+                </nav>
+
+                <!-- Header CTA Action Buttons -->
+                <div class="hidden sm:flex items-center space-x-3">
+                    <a href="tel:5594321271" class="border-2 border-brandBlue text-brandBlue hover:bg-brandBlue hover:text-white px-4 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all flex items-center space-x-2">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Cotizar</span>
+                    </a>
+                    <a href="https://wa.me/525594321271?text=Hola,%20me%20gustaria%20solicitar%20una%20cotizacion" target="_blank" class="bg-brandGreen hover:bg-brandGreenDark text-white px-4 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all shadow-md flex items-center space-x-2">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobile-menu-toggle" class="lg:hidden p-2 text-slate-700 hover:text-brandBlue focus:outline-none" aria-label="Abrir Menú">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu Dropdown -->
+        <div id="mobile-menu-dropdown" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-5 space-y-4 shadow-lg">
+            <a href="#inicio" class="mobile-link block font-semibold text-slate-800 hover:text-brandBlue">Inicio</a>
+            <a href="#experiencia" class="mobile-link block font-semibold text-slate-800 hover:text-brandBlue">¿Quiénes Somos?</a>
+            <a href="#servicios" class="mobile-link block font-semibold text-slate-800 hover:text-brandBlue">Servicios</a>
+            <a href="#galeria" class="mobile-link block font-semibold text-slate-800 hover:text-brandBlue">Galería de Trabajos</a>
+            <a href="#polizas" class="mobile-link block font-semibold text-slate-800 hover:text-brandBlue">Pólizas Anuales</a>
+            <a href="#reseñas" class="mobile-link block font-semibold text-slate-800 hover:text-brandBlue">Reseñas de Clientes</a>
+            <a href="#contacto" class="mobile-link block font-semibold text-slate-800 hover:text-brandBlue">Contacto Directo</a>
+            
+            <div class="pt-4 border-t border-slate-100 grid grid-cols-2 gap-3">
+                <a href="tel:5594321271" class="text-center bg-slate-100 text-slate-800 font-bold py-2.5 rounded-xl text-xs">
+                    <i class="fa-solid fa-phone mr-1"></i> Llamar
+                </a>
+                <a href="https://wa.me/525594321271" target="_blank" class="text-center bg-brandGreen text-white font-bold py-2.5 rounded-xl text-xs">
+                    <i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HERO SECTION -->
+    <section id="inicio" class="relative bg-gradient-to-b from-blue-50/70 via-white to-softBackground pt-8 pb-16 lg:pt-16 lg:pb-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Column -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-blue-100/80 border border-blue-200 px-3.5 py-1.5 rounded-full text-brandBlue text-xs sm:text-sm font-extrabold tracking-wide">
+                        <i class="fa-solid fa-award"></i>
+                        <span>13 AÑOS DE EXPERIENCIA COMPROBADA</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-tight">
+                        Instalación de aire acondicionado en <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandBlue to-teal-500">Ciudad de México, Área Metropolitana y Estado de México</span>
+                    </h1>
+
+                    <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        En <strong class="text-slate-900">Climas Confort Andrade</strong> nos dedicamos a ofrecer soluciones profesionales en instalación, mantenimiento preventivo y correctivo, desmonte de equipos para la industria, oficinas, empresas y hogares.
+                    </p>
+
+                    <!-- Hero Call-to-Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="https://wa.me/525594321271?text=Hola,%20me%20interesa%20una%20cotizacion%20de%20aire%20acondicionado" target="_blank" class="w-full sm:w-auto bg-brandGreen hover:bg-brandGreenDark text-white px-8 py-4 rounded-xl font-extrabold text-base shadow-lg shadow-emerald-500/25 transition-all transform hover:-translate-y-0.5 flex items-center justify-center space-x-3">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>Cotizaciones por WhatsApp</span>
+                        </a>
+                        <a href="tel:5594321271" class="w-full sm:w-auto bg-brandBlue hover:bg-brandBlueDark text-white px-8 py-4 rounded-xl font-extrabold text-base shadow-lg shadow-blue-500/25 transition-all transform hover:-translate-y-0.5 flex items-center justify-center space-x-3">
+                            <i class="fa-solid fa-phone text-lg"></i>
+                            <span>Llamar Directamente</span>
+                        </a>
+                    </div>
+
+                    <!-- Coverage Area Badges -->
+                    <div class="pt-6 border-t border-slate-200/80 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs font-bold text-slate-500">
+                        <span class="flex items-center"><i class="fa-solid fa-location-dot text-brandBlue mr-1.5"></i> Ecatepec</span>
+                        <span class="flex items-center"><i class="fa-solid fa-location-dot text-brandBlue mr-1.5"></i> CDMX</span>
+                        <span class="flex items-center"><i class="fa-solid fa-location-dot text-brandBlue mr-1.5"></i> Estado de México</span>
+                        <span class="flex items-center"><i class="fa-solid fa-clock text-amber-500 mr-1.5"></i> Cobertura 24/7</span>
+                    </div>
+                </div>
+
+                <!-- Hero Right Column Image -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-2 rounded-3xl bg-gradient-to-r from-brandBlue to-teal-400 opacity-20 blur-xl"></div>
+                        <div class="relative bg-white p-3 rounded-3xl shadow-2xl border border-slate-100">
+                            <!-- IMAGEN HERO EDITABLE (Reemplaza la ruta directamente en src) -->
+                            <img id="hero-img" src="image2.jpg" alt="Técnico Especializado en Aire Acondicionado Climas Confort Andrade" class="rounded-2xl w-full h-[380px] sm:h-[450px] object-cover" onerror="tratarErrorImagen(this, 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80')">
+                            
+                            <!-- Floating Badge sobre la imagen -->
+                            <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-slate-100 flex items-center space-x-4">
+                                <div class="p-3 bg-blue-100 text-brandBlue rounded-xl text-xl">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-bold text-slate-400 uppercase">Calidad y Estética</p>
+                                    <p class="text-sm font-extrabold text-slate-800">Precios Accesibles y Garantía</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SECCIÓN EXPERIENCIA / QUIÉNES SOMOS -->
+    <section id="experiencia" class="py-16 bg-white border-y border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <div class="lg:col-span-5">
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 leading-snug">
+                        Expertos en instalación de aire acondicionado
+                    </h2>
+                    <div class="w-16 h-1.5 bg-brandBlue rounded-full my-4"></div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
+                    <p>
+                        Con una sólida experiencia de <strong class="text-slate-900">13 años en el sector</strong>, trabajamos con el compromiso de brindar calidad, estética, garantía y precios accesibles en cada uno de nuestros servicios.
+                    </p>
+                    <p>
+                        Sabemos lo importante que es mantener un ambiente cómodo y seguro, por eso ponemos a tu disposición un equipo de técnicos especializados en la <strong class="text-slate-900">instalación y mantenimiento de aire acondicionado</strong>, comprometidos en cuidar cada detalle de tus instalaciones.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. GALERÍA / CARRUSEL DINÁMICO DE TRABAJOS -->
+    <section id="galeria" class="py-20 bg-slate-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-extrabold text-teal-400 uppercase tracking-widest bg-slate-800 px-3 py-1 rounded-full border border-slate-700">Galería Dinámica</span>
+                <h2 class="text-3xl sm:text-4xl font-black mt-3">Proyectos e Instalaciones Realizadas</h2>
+                <p class="text-slate-400 mt-2 text-sm sm:text-base">Mantenimientos, desmontajes y montajes profesionales en todo CDMX y Estado de México.</p>
+            </div>
+
+            <!-- Carrusel Container Principal -->
+            <div class="relative max-w-5xl mx-auto rounded-3xl overflow-hidden bg-slate-800 shadow-2xl border border-slate-700 group" id="carousel-wrapper">
+                
+                <!-- Slide Viewport -->
+                <div class="relative h-[320px] sm:h-[480px] w-full overflow-hidden">
+                    <div id="carousel-slides" class="w-full h-full relative">
+                        <!-- Las diapositivas se inyectan dinámicamente con JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Controles Prev / Next -->
+                <button id="carousel-prev-btn" class="absolute left-4 top-1/2 -translate-y-1/2 bg-slate-900/70 hover:bg-brandBlue text-white w-12 h-12 rounded-full flex items-center justify-center transition-all focus:outline-none shadow-lg z-20" aria-label="Anterior">
+                    <i class="fa-solid fa-chevron-left text-lg"></i>
+                </button>
+                <button id="carousel-next-btn" class="absolute right-4 top-1/2 -translate-y-1/2 bg-slate-900/70 hover:bg-brandBlue text-white w-12 h-12 rounded-full flex items-center justify-center transition-all focus:outline-none shadow-lg z-20" aria-label="Siguiente">
+                    <i class="fa-solid fa-chevron-right text-lg"></i>
+                </button>
+
+                <!-- Caption Informativo Dinámico -->
+                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-6 text-left z-10">
+                    <h3 id="carousel-caption-title" class="text-xl sm:text-2xl font-extrabold text-white">Cargando proyecto...</h3>
+                    <p id="carousel-caption-desc" class="text-xs sm:text-sm text-slate-300 mt-1">Sistemas de climatización profesionales.</p>
+                </div>
+
+            </div>
+
+            <!-- Indicadores (Dots) -->
+            <div id="carousel-dots" class="flex justify-center items-center space-x-2 mt-6">
+                <!-- Generados con JS -->
+            </div>
+
+            <p class="text-center text-xs text-slate-400 mt-4">
+                <i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Haz clic en cualquier imagen del carrusel para verla en tamaño completo.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- 6. SERVICIOS ESPECIALIZADOS -->
+    <section id="servicios" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-black text-brandBlue uppercase tracking-widest">Servicios Especializados</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Trabajamos en:</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Card 1: Mantenimiento -->
+                <div class="bg-softBackground rounded-2xl p-8 border border-slate-200/80 hover:border-brandBlue transition-all hover:shadow-xl group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-blue-100 text-brandBlue rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-brandBlue group-hover:text-white transition-all">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Mantenimiento Preventivo y Correctivo</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Aseguramos el óptimo desempeño de tus sistemas de climatización. Nuestros programas de mantenimiento preventivo permiten alargar la vida útil de tus equipos, evitar fallas costosas y garantizar un funcionamiento eficiente en todo momento.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/525594321271?text=Hola,%20requiero%20mantenimiento%20preventivo%20o%20correctivo" target="_blank" class="w-full py-3 bg-white border border-brandBlue text-brandBlue group-hover:bg-brandBlue group-hover:text-white rounded-xl font-bold text-xs sm:text-sm text-center transition-all flex items-center justify-center space-x-2">
+                        <span>Solicitar Mantenimiento</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Card 2: Desmontaje -->
+                <div class="bg-softBackground rounded-2xl p-8 border border-slate-200/80 hover:border-brandBlue transition-all hover:shadow-xl group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-teal-100 text-teal-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-teal-600 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-box-open"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Desmontaje de Equipos de Aire Acondicionado</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Realizamos el retiro profesional de unidades de aire acondicionado, cuidando la integridad del equipo y del espacio donde se encuentra instalado. Nos aseguramos de dejar el área limpia y lista para futuras adaptaciones.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/525594321271?text=Hola,%20requiero%20desmontaje%20de%20equipos" target="_blank" class="w-full py-3 bg-white border border-teal-600 text-teal-600 group-hover:bg-teal-600 group-hover:text-white rounded-xl font-bold text-xs sm:text-sm text-center transition-all flex items-center justify-center space-x-2">
+                        <span>Cotizar Desmontaje</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Card 3: Instalación -->
+                <div class="bg-softBackground rounded-2xl p-8 border border-slate-200/80 hover:border-brandBlue transition-all hover:shadow-xl group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-emerald-100 text-brandGreen rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-brandGreen group-hover:text-white transition-all">
+                            <i class="fa-solid fa-fan"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Instalación de Aire Acondicionado</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Ya sea para una casa, oficina, empresa o una planta industrial, en Climas Confort Andrade nos encargamos de instalar tu nuevo sistema de aire acondicionado de forma segura y eficiente.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/525594321271?text=Hola,%20necesito%20instalacion%20de%20aire%20acondicionado" target="_blank" class="w-full py-3 bg-white border border-brandGreen text-brandGreen group-hover:bg-brandGreen group-hover:text-white rounded-xl font-bold text-xs sm:text-sm text-center transition-all flex items-center justify-center space-x-2">
+                        <span>Cotizar Instalación</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. PÓLIZAS ANUALES -->
+    <section id="polizas" class="py-20 bg-gradient-to-br from-brandBlueDark via-brandBlue to-blue-800 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Technician Image -->
+                <div class="lg:col-span-5 order-2 lg:order-1 flex justify-center">
+                    <img id="polizas-img" src="tecnico.jpg" alt="Técnico Climas Confort Andrade" class="w-full max-w-md h-auto object-contain drop-shadow-2xl" onerror="tratarErrorImagen(this, 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=700&q=80')">
+                </div>
+
+                <!-- Right Content -->
+                <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
+                    <span class="bg-white/20 text-white text-xs font-black uppercase px-3 py-1 rounded-full">Protección Continua</span>
+                    <h2 class="text-3xl sm:text-5xl font-black leading-tight">
+                        Pólizas de Mantenimiento Anual
+                    </h2>
+                    
+                    <p class="text-blue-100 text-base sm:text-lg leading-relaxed">
+                        Te ofrecemos pólizas de mantenimiento anual adaptadas a tus necesidades, ideales para mantener en perfectas condiciones tus sistemas de climatización durante todo el año, reduciendo riesgos de fallas y extendiendo la vida útil de tus inversiones.
+                    </p>
+
+                    <p class="text-blue-100 text-base leading-relaxed">
+                        En <strong class="text-white">Climas Confort Andrade</strong> estamos comprometidos con tu comodidad y tranquilidad. ¡Permítenos ser tu mejor opción en aire acondicionado y experimenta el servicio que mereces!
+                    </p>
+
+                    <div class="pt-4 flex flex-wrap gap-4">
+                        <a href="https://wa.me/525594321271?text=Hola,%20deseo%20informacion%20sobre%20las%20Polizas%20de%20Mantenimiento%20Anual" target="_blank" class="bg-brandGreen hover:bg-brandGreenDark text-white px-8 py-4 rounded-xl font-extrabold text-base shadow-xl flex items-center space-x-3 transition-all hover:scale-105">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>Cotizar Póliza Anual</span>
+                        </a>
+                        <a href="tel:5594321271" class="bg-white text-brandBlue hover:bg-slate-100 px-8 py-4 rounded-xl font-extrabold text-base shadow-xl flex items-center space-x-3 transition-all hover:scale-105">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Atención Telefónica</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. SECCIÓN DE RESEÑAS Y OPINIONES -->
+    <section id="reseñas" class="py-20 bg-slate-50 border-b border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center space-x-2 bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-bold mb-3">
+                    <i class="fa-brands fa-google text-amber-600"></i>
+                    <span>Calificación Excelente 4.9 / 5.0</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Opiniones de Nuestros Clientes</h2>
+                <p class="text-slate-600 mt-2 text-sm sm:text-base">Garantía, profesionalismo y atención personalizada en cada trabajo.</p>
+            </div>
+
+            <!-- Grid de Reseñas -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-white p-7 rounded-2xl border border-slate-200/80 shadow-sm relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-brandBlue text-white font-black rounded-full flex items-center justify-center text-sm">
+                                    CA
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-sm">Carlos Alvarado</h4>
+                                    <p class="text-xs text-slate-400">Cliente Verificado • Ecatepec</p>
+                                </div>
+                            </div>
+                            <i class="fa-brands fa-google text-slate-300 text-xl"></i>
+                        </div>
+                        <div class="flex text-amber-400 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed italic">
+                            "Excelente servicio de instalación. Llegaron puntuales a mi oficina en Ecatepec, realizaron el trabajo de forma limpia y el equipo está funcionando a la perfección. Muy recomendados."
+                        </p>
+                    </div>
+                    <span class="text-[11px] text-slate-400 mt-4 block">Hace 2 semanas</span>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-7 rounded-2xl border border-slate-200/80 shadow-sm relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-emerald-600 text-white font-black rounded-full flex items-center justify-center text-sm">
+                                    MG
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-sm">Mariana Gómez</h4>
+                                    <p class="text-xs text-slate-400">Cliente Verificado • CDMX</p>
+                                </div>
+                            </div>
+                            <i class="fa-brands fa-google text-slate-300 text-xl"></i>
+                        </div>
+                        <div class="flex text-amber-400 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed italic">
+                            "Tenía una urgencia con el aire de mi local comercial en fin de semana y me atendieron rápido por WhatsApp. En menos de 2 horas estaba el técnico resolviendo el problema. Pagué con tarjeta sin inconvenientes."
+                        </p>
+                    </div>
+                    <span class="text-[11px] text-slate-400 mt-4 block">Hace 1 mes</span>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-7 rounded-2xl border border-slate-200/80 shadow-sm relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-purple-600 text-white font-black rounded-full flex items-center justify-center text-sm">
+                                    RR
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-sm">Roberto Ramírez</h4>
+                                    <p class="text-xs text-slate-400">Cliente Verificado • Estado de México</p>
+                                </div>
+                            </div>
+                            <i class="fa-brands fa-google text-slate-300 text-xl"></i>
+                        </div>
+                        <div class="flex text-amber-400 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed italic">
+                            "Contratamos la póliza de mantenimiento anual para nuestra nave industrial. El trato directo y el conocimiento de los técnicos nos da mucha tranquilidad."
+                        </p>
+                    </div>
+                    <span class="text-[11px] text-slate-400 mt-4 block">Hace 1 mes</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. CENTRO DE CONTACTO Y ATENCIÓN DIRECTA -->
+    <section id="contacto" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-slate-900 via-darkNavy to-slate-900 rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+                    
+                    <div class="lg:col-span-7 space-y-4">
+                        <span class="bg-brandBlue/30 text-brandBlue border border-brandBlue/40 px-3 py-1 rounded-full text-xs font-bold uppercase">Atención Inmediata</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold">¿Necesitas una cotización o tienes un mantenimiento urgente?</h2>
+                        <p class="text-slate-300 text-sm sm:text-base">
+                            Atendemos tus consultas de inmediato por teléfono o WhatsApp. Cobertura completa en CDMX, Ecatepec y Estado de México.
+                        </p>
+                        
+                        <div class="pt-2 space-y-2 text-xs sm:text-sm text-slate-300">
+                            <p class="flex items-center"><i class="fa-solid fa-location-dot text-brandBlue mr-2 text-base"></i> Oficina Principal: calotitlán 8 profopec iv (polígono iv el cegor), ecatepec, mexico 55127</p>
+                            <p class="flex items-center"><i class="fa-solid fa-clock text-amber-400 mr-2 text-base"></i> Horarios: Lunes a Domingo de 08:00 a 18:00 hrs (Atención de Urgencias 24/7)</p>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-5 flex flex-col space-y-4">
+                        <a href="https://wa.me/525594321271?text=Hola,%20solicito%20atencion%20para%20un%20servicio%20de%20aire%20acondicionado" target="_blank" class="w-full bg-brandGreen hover:bg-brandGreenDark text-white py-4 px-6 rounded-2xl font-extrabold text-center transition-all shadow-lg flex items-center justify-center space-x-3">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>Enviar Mensaje de WhatsApp</span>
+                        </a>
+
+                        <a href="tel:5594321271" class="w-full bg-brandBlue hover:bg-brandBlueDark text-white py-4 px-6 rounded-2xl font-extrabold text-center transition-all shadow-lg flex items-center justify-center space-x-3">
+                            <i class="fa-solid fa-phone text-lg"></i>
+                            <span>Llamar al 55-9432-1271</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. FOOTER CON MÉTODOS DE PAGO Y SEO -->
+    <footer class="bg-slate-950 text-slate-300 pt-16 pb-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-slate-800/80">
+                
+                <!-- Columna 1: Info Empresa -->
+                <div class="md:col-span-5 space-y-4">
+                    <img src="logo.png" alt="Climas Confort Andrade" class="h-10 w-auto object-contain brightness-0 invert" onerror="tratarErrorImagen(this, 'https://placehold.co/220x60/ffffff/000000?text=CLIMAS+CONFORT')">
+                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+                        Especialistas en climatización industrial, comercial y residencial. 13 años brindando soluciones de alta calidad, garantía y atención inmediata en Ciudad de México y Estado de México.
+                    </p>
+                </div>
+
+                <!-- Columna 2: Contacto Directo -->
+                <div class="md:col-span-4 space-y-3">
+                    <h4 class="text-white text-sm font-extrabold uppercase tracking-wider">Contacto Directo</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-phone text-brandBlue"></i>
+                            <a href="tel:5594321271" class="hover:text-white transition-colors">55-9432-1271</a>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-phone text-brandBlue"></i>
+                            <a href="tel:5631076352" class="hover:text-white transition-colors">56-3107-6352</a>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-envelope text-brandBlue"></i>
+                            <a href="mailto:climasconfortandrade@hotmail.com" class="hover:text-white transition-colors">climasconfortandrade@hotmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Formas de Pago -->
+                <div class="md:col-span-3 space-y-4">
+                    <h4 class="text-white text-sm font-extrabold uppercase tracking-wider">Aceptamos Formas de Pago</h4>
+                    <p class="text-xs text-slate-400">Paga cómodamente con tu método de preferencia:</p>
+                    
+                    <div class="grid grid-cols-3 gap-2">
+                        <div class="bg-slate-900 border border-slate-800 p-2 rounded-xl text-center flex flex-col items-center justify-center">
+                            <i class="fa-solid fa-money-bill-wave text-emerald-400 text-lg mb-1"></i>
+                            <span class="text-[10px] font-bold text-slate-200">Efectivo</span>
+                        </div>
+                        <div class="bg-slate-900 border border-slate-800 p-2 rounded-xl text-center flex flex-col items-center justify-center">
+                            <i class="fa-solid fa-building-columns text-brandBlue text-lg mb-1"></i>
+                            <span class="text-[10px] font-bold text-slate-200">Transferencia</span>
+                        </div>
+                        <div class="bg-slate-900 border border-slate-800 p-2 rounded-xl text-center flex flex-col items-center justify-center">
+                            <i class="fa-solid fa-credit-card text-purple-400 text-lg mb-1"></i>
+                            <span class="text-[10px] font-bold text-slate-200">Tarjetas</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <p>© 2026 Climas Confort Andrade. Todos los derechos reservados.</p>
+                <p>Ecatepec • CDMX • Estado de México</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 11. BOTÓN Y WIDGET FLOTANTE DE WHATSAPP -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+        
+        <!-- Chat Widget Box -->
+        <div id="whatsapp-chat-box" class="hidden mb-4 bg-white rounded-2xl shadow-2xl border border-slate-200 w-80 overflow-hidden transform transition-all duration-300">
+            <div class="bg-brandGreen p-4 text-white flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="relative">
+                        <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-user-gear"></i>
+                        </div>
+                        <span class="absolute bottom-0 right-0 w-3 h-3 bg-emerald-400 border-2 border-white rounded-full"></span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm">Soporte Técnico 24/7</h4>
+                        <p class="text-[11px] text-emerald-100">Climas Confort Andrade</p>
+                    </div>
+                </div>
+                <button id="close-whatsapp-chat" class="text-white/80 hover:text-white p-1" aria-label="Cerrar Chat">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+            
+            <div class="p-4 bg-slate-50 space-y-3">
+                <div class="bg-white p-3 rounded-xl shadow-xs border border-slate-200 text-xs text-slate-700">
+                    👋 ¡Hola! ¿En qué podemos ayudarte hoy? Cotizamos tu instalación o atendemos tu urgencia de inmediato.
+                </div>
+            </div>
+
+            <div class="p-3 bg-white border-t border-slate-100">
+                <a href="https://wa.me/525594321271?text=Hola,%20me%20gustaria%20recibir%20atencion%20personalizada" target="_blank" class="w-full bg-brandGreen hover:bg-brandGreenDark text-white py-2.5 rounded-xl text-xs font-bold text-center block transition-all shadow-md">
+                    Iniciar Chat por WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <!-- Floating Button Trigger -->
+        <button id="whatsapp-trigger-btn" class="glow-pulse bg-brandGreen text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition-transform focus:outline-none" aria-label="WhatsApp Contacto">
+            <i class="fa-brands fa-whatsapp"></i>
+        </button>
+    </div>
+
+    <!-- 12. MODAL VER IMAGEN COMPLETA (ZOOM) -->
+    <div id="image-modal" class="fixed inset-0 bg-black/90 z-50 hidden flex items-center justify-center p-4">
+        <button id="close-modal-btn" class="absolute top-6 right-6 text-white text-3xl hover:text-red-400 transition-colors focus:outline-none">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="max-w-4xl max-h-[90vh] p-2">
+            <img id="modal-image-element" src="" alt="Vista Previa de Instalación" class="max-w-full max-h-[85vh] rounded-2xl object-contain mx-auto shadow-2xl">
+            <p id="modal-caption-text" class="text-center text-white text-sm font-semibold mt-4"></p>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT DE CONTROL LOGICO -->
+    <script>
+        // Manejador Inteligente para Espacios en Nombre de Imágenes y Fallback
+        function tratarErrorImagen(imgElement, fallbackUrl) {
+            imgElement.onerror = null;
+            if (fallbackUrl) {
+                imgElement.src = fallbackUrl;
+            }
+        }
+
+        // Asegurar codificación de espacios para imágenes locales (ej: "tecnico 1.jpg" -> "tecnico%201.jpg")
+        document.addEventListener('DOMContentLoaded', () => {
+            const allImages = document.querySelectorAll('img');
+            allImages.forEach(img => {
+                const currentSrc = img.getAttribute('src');
+                if (currentSrc && currentSrc.includes(' ') && !currentSrc.startsWith('http')) {
+                    img.src = encodeURI(currentSrc);
+                }
+            });
+        });
+
+        // 1. DATA DEL CARRUSEL DE GALERÍA
+        const galeriaProyectos = [
+            {
+                url: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80',
+                titulo: 'Instalación de Sistema de Climatización Industrial',
+                descripcion: 'Montaje de unidades de alto rendimiento en nave industrial en Estado de México.'
+            },
+            {
+                url: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80',
+                titulo: 'Mantenimiento Preventivo y Correctivo',
+                descripcion: 'Limpieza profunda de serpentines, filtros y revisión eléctrica completa.'
+            },
+            {
+                url: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80',
+                titulo: 'Instalación Residencial y Comercial en CDMX',
+                descripcion: 'Montaje estético garantizando eficiencia energética y confort absoluto.'
+            }
+        ];
+
+        let currentSlide = 0;
+        let slideInterval;
+
+        const slidesContainer = document.getElementById('carousel-slides');
+        const dotsContainer = document.getElementById('carousel-dots');
+        const captionTitle = document.getElementById('carousel-caption-title');
+        const captionDesc = document.getElementById('carousel-caption-desc');
+
+        function initCarousel() {
+            if (!slidesContainer) return;
+            
+            slidesContainer.innerHTML = '';
+            dotsContainer.innerHTML = '';
+
+            galeriaProyectos.forEach((item, index) => {
+                const slide = document.createElement('div');
+                slide.className = `carousel-slide absolute inset-0 w-full h-full cursor-pointer transition-opacity duration-500 ${index === 0 ? 'opacity-100 z-10' : 'opacity-0 z-0'}`;
+                slide.setAttribute('data-index', index);
+                
+                slide.innerHTML = `
+                    <img src="${item.url}" alt="${item.titulo}" class="w-full h-full object-cover rounded-3xl" onclick="openImageModal('${item.url}', '${item.titulo}')">
+                `;
+                slidesContainer.appendChild(slide);
+
+                const dot = document.createElement('button');
+                dot.className = `w-3 h-3 rounded-full transition-all ${index === 0 ? 'bg-brandBlue w-8' : 'bg-slate-600 hover:bg-slate-400'}`;
+                dot.setAttribute('aria-label', `Ir a diapositiva ${index + 1}`);
+                dot.addEventListener('click', () => goToSlide(index));
+                dotsContainer.appendChild(dot);
+            });
+
+            updateCaption();
+            startAutoplay();
+        }
+
+        function updateCaption() {
+            if (galeriaProyectos[currentSlide]) {
+                captionTitle.textContent = galeriaProyectos[currentSlide].titulo;
+                captionDesc.textContent = galeriaProyectos[currentSlide].descripcion;
+            }
+        }
+
+        function goToSlide(index) {
+            const slides = document.querySelectorAll('.carousel-slide');
+            const dots = dotsContainer.children;
+
+            slides.forEach((slide, idx) => {
+                if (idx === index) {
+                    slide.classList.remove('opacity-0', 'z-0');
+                    slide.classList.add('opacity-100', 'z-10');
+                } else {
+                    slide.classList.remove('opacity-100', 'z-10');
+                    slide.classList.add('opacity-0', 'z-0');
+                }
+            });
+
+            Array.from(dots).forEach((dot, idx) => {
+                if (idx === index) {
+                    dot.className = 'w-8 h-3 rounded-full bg-brandBlue transition-all';
+                } else {
+                    dot.className = 'w-3 h-3 rounded-full bg-slate-600 hover:bg-slate-400 transition-all';
+                }
+            });
+
+            currentSlide = index;
+            updateCaption();
+        }
+
+        function nextSlide() {
+            const next = (currentSlide + 1) % galeriaProyectos.length;
+            goToSlide(next);
+        }
+
+        function prevSlide() {
+            const prev = (currentSlide - 1 + galeriaProyectos.length) % galeriaProyectos.length;
+            goToSlide(prev);
+        }
+
+        function startAutoplay() {
+            stopAutoplay();
+            slideInterval = setInterval(nextSlide, 5000);
+        }
+
+        function stopAutoplay() {
+            if (slideInterval) clearInterval(slideInterval);
+        }
+
+        document.getElementById('carousel-next-btn')?.addEventListener('click', () => {
+            nextSlide();
+            startAutoplay();
+        });
+
+        document.getElementById('carousel-prev-btn')?.addEventListener('click', () => {
+            prevSlide();
+            startAutoplay();
+        });
+
+        const carouselWrapper = document.getElementById('carousel-wrapper');
+        carouselWrapper?.addEventListener('mouseenter', stopAutoplay);
+        carouselWrapper?.addEventListener('mouseleave', startAutoplay);
+
+        // 2. MODAL DE ZOOM DE IMAGEN
+        const imageModal = document.getElementById('image-modal');
+        const modalImg = document.getElementById('modal-image-element');
+        const modalCaption = document.getElementById('modal-caption-text');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+
+        window.openImageModal = function(url, caption) {
+            if (imageModal && modalImg) {
+                modalImg.src = url;
+                modalCaption.textContent = caption || '';
+                imageModal.classList.remove('hidden');
+            }
+        };
+
+        closeModalBtn?.addEventListener('click', () => {
+            imageModal?.classList.add('hidden');
+        });
+
+        imageModal?.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                imageModal.classList.add('hidden');
+            }
+        });
+
+        // 3. MENÚ MÓVIL
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenuDropdown = document.getElementById('mobile-menu-dropdown');
+
+        mobileMenuToggle?.addEventListener('click', () => {
+            mobileMenuDropdown?.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuDropdown?.classList.add('hidden');
+            });
+        });
+
+        // 4. CHAT FLOTANTE DE WHATSAPP
+        const whatsappTriggerBtn = document.getElementById('whatsapp-trigger-btn');
+        const whatsappChatBox = document.getElementById('whatsapp-chat-box');
+        const closeWhatsappChat = document.getElementById('close-whatsapp-chat');
+
+        whatsappTriggerBtn?.addEventListener('click', () => {
+            whatsappChatBox?.classList.toggle('hidden');
+        });
+
+        closeWhatsappChat?.addEventListener('click', () => {
+            whatsappChatBox?.classList.add('hidden');
+        });
+
+        // Inicialización al cargar el DOM
+        window.addEventListener('DOMContentLoaded', () => {
+            initCarousel();
+        });
+    </script>
+</body>
+</html>
